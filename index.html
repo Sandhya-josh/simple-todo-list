@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="todo-container">
+        <header>
+            <h1>Stay Productive</h1>
+            <p>Manage your daily tasks efficiently</p>
+        </header>
+
+        <form id="todo-form">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="Add a new task..." autocomplete="off" required>
+                <button type="submit" id="add-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="todo-stats">
+            <span>Total: <strong id="total-count">0</strong></span>
+            <span>Completed: <strong id="completed-count">0</strong></span>
+        </div>
+
+        <ul id="todo-list">
+            <!-- Dynamic tasks will be injected here by JS -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
